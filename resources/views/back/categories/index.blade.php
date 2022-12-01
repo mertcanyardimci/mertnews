@@ -324,11 +324,11 @@
         type:'GET',
         url:"{{route('admin.categories.getdata')}}",
         data:{id:id},
-        success:function(data){
-        console.log(data);
-        $('#category').val(data.name);
-        $('#category_id').val(data.id);
-        if($('#editModal').modal('show'));
+        success: function(data) {
+          console.log(data);
+          $('#category').val(data.name);
+          $('#category_id').val(data.id);
+          if ($('#editModal') $('#editModal').modal('show')
         }
       });
     });
@@ -340,7 +340,7 @@
         $('#newsAlert').html(name+' kategorisi silinemez ! Silinen diğer kategoriye ait haberler genel kategorisine aktarılır.');
         $('#body').show();
         $('#deleteButton').hide();
-        $('#deleteModal').modal('show');
+        if ($('#deleteModal')) $('#deleteModal').modal('show')
         return;
       }
       $('#deleteButton').show();
@@ -355,7 +355,7 @@
         $('#newsAlert').html('Silmek istediğinize emin misiniz ?');
         $('#body').show();
       }
-      $('#deleteModal').modal('show');
+      if ($('#deleteModal')) $('#deleteModal').modal('show');
 
     });
   });

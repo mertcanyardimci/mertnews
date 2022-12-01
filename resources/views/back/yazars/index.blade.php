@@ -328,7 +328,7 @@
         console.log(data);
         $('#yazar').val(data.name);
         $('#yazar_id').val(data.id);
-        $('#editModal').modal('show');
+        if ($('#editModal')) $('#editModal').modal('show')
         }
       });
     });
@@ -340,7 +340,7 @@
         $('#newsAlert').html(name+' silinemez ! Silinen diğer yazarlara ait haberler genele aktarılır.');
         $('#body').show();
         $('#deleteButton').hide();
-        $('#deleteModal').modal('show');
+        if ($('#deleteModal')) $('#deleteModal').modal('show')
         return;
       }
       $('#deleteButton').show();
@@ -355,7 +355,7 @@
         $('#newsAlert').html('Silmek istediğinize emin misiniz ?');
         $('#body').show();
       }
-      $('#deleteModal').modal('show');
+      if ($('#deleteModal')) $('#deleteModal').modal('show')
 
     });
   });
