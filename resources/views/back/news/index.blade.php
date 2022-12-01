@@ -306,7 +306,7 @@
       $('#newsAlert').html('Silmek istediğinize emin misiniz ?');
       $('#deletedId').val(id);
       $('#body').show();
-      $('#deleteModal').modal('show');
+      if ($('#deleteModal')) $('#deleteModal').modal('show')
       });
     });
    </script>
