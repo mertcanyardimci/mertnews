@@ -1,40 +1,41 @@
-# MertNews Haber Sitesi
+# MertNews Website
 
-MertNews, haberlerinizi güncel ve tarafsız bir şekilde sunmak için tasarlanmış bir web uygulamasıdır. Bu proje PHP dilinde Laravel framework'ü kullanılarak geliştirilmiştir.
+MertNews is a web application designed to provide your news in an up-to-date and unbiased manner. This project is developed using the Laravel framework in the PHP language.
 
-## Özellikler
+## Features
 
-- Anasayfa: Son dakika haberlerine, öne çıkan haberlere ve kategorilere erişim imkanı sağlar.
-- Hakkımızda: Kuruluş hakkında bilgi veren sayfa.
-- Haber Detayları: Her bir haberin ayrıntılarını içeren sayfa.
-- Gezi Rehberi: Seyahat tutkunları için gezi rehberi içeren sayfa.
-- İletişim: Kullanıcıların bizimle iletişime geçebileceği iletişim formu.
+- Homepage: Provides access to breaking news, featured news, and categories.
+- About Us: Page providing information about the organization.
+- News Details: Page containing the details of each news item.
+- Travel Guide: Page containing a travel guide for travel enthusiasts.
+- Contact: Contact form for users to get in touch with us.
 
-## Gereksinimler
+## Requirements
 
 - PHP 7.x
 - Composer
 - Laravel 8.x
-- MySQL veya diğer desteklenen veritabanı
+- MySQL or other supported databases
 
-## Kurulum
+## Installation
 
-1. Projeyi klonlayın veya ZIP dosyası olarak indirin.
-2. Terminali açın ve projenin bulunduğu dizine gidin.
-3. composer install komutunu kullanarak gerekli bağımlılıkları yükleyin.
-4. '.env.example' dosyasını '.env' olarak kopyalayın ve veritabanı bilgilerinizi düzenleyin.
-5. 'php artisan key:generate' komutunu kullanarak uygulama anahtarını oluşturun.
-6. 'php artisan migrate' komutunu kullanarak veritabanını oluşturun.
-7. 'php artisan serve' komutunu kullanarak yerel sunucuyu başlatın.
-   
-## Kullanım
+1. Clone the project or download it as a ZIP file.
+2. Open the terminal and navigate to the directory where the project is located.
+3. Install the necessary dependencies using the 'composer install' command.
+4. Copy the '.env.example' file as '.env' and edit your database information.
+5. Generate the application key using the 'php artisan key:generate' command.
+6. Create the database using the 'php artisan migrate' command.
+7. Start the local server using the 'php artisan serve' command.
 
-- Projeyi başlattıktan sonra tarayıcınızda http://localhost:8000 adresine gidin.
-- Ana sayfadan haberlere göz atabilir veya kategorilere göre filtreleyebilirsiniz.
-- Haber detaylarına tıklayarak haberin tamamını okuyabilirsiniz.
-- Diğer sayfalara da menüden erişebilirsiniz.
+## Usage
 
-## Katkıda Bulunma
-- Projeye katkıda bulunmak için bir fork oluşturun.
-- Yeni özellikler veya düzeltmeler ekleyin.
-- Değişikliklerinizi bir pull isteği olarak gönderin.
+- After starting the project, go to http://localhost:8000 in your browser.
+- Browse through the news on the homepage or filter by categories.
+- Click on news details to read the full article.
+- Access other pages from the menu.
+
+## Contributing
+
+- Fork the project to contribute.
+- Add new features or fixes.
+- Submit your changes as a pull request.
